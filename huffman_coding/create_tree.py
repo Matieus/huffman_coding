@@ -12,7 +12,8 @@ class CreateTree:
         dict_tree = {}
 
         values = list(self.chars_dict.values())
-
+        Heapsort().heapsort(values)
+        
         while (len(values) >= 2):
             i = values.pop(0)
             a = GetKey(self.chars_dict).get_key(i)

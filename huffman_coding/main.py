@@ -26,7 +26,7 @@ def character_count(file: str) -> Dict[str, int]:
 
 
 chars_dict = character_count(file)
-
+print(f"character count:\n{chars_dict}", "\n")
 
 values = list(chars_dict.values())
 Heapsort().heapsort(values)
@@ -49,3 +49,4 @@ print("_"*30, '\n')
 result_dict = ResultDict(code, dict_tree, character_count(file)).result()
 SaveJsonFile(result_dict)
 print(yaml.dump(result_dict, sort_keys=False, default_flow_style=False))
+print("_"*30, '\n')
