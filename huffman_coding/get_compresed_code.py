@@ -13,5 +13,5 @@ class GetCompressedCode():
                     if n == i:
                         code = code + str(chars_dict_code[n])
 
-        code = f"{code}\n{str(chars_dict_code)}"
+        code = f"{code}"
         return code

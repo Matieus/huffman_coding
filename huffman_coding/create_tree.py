@@ -24,6 +24,7 @@ class CreateTree:
             j = values.pop(0)
             b = GetKey(self.chars_dict).get_key(j)
             self.chars_dict.pop(b)
+            
             c = str(a) + str(b)
             z = j + i
             self.chars_dict[c] = z
